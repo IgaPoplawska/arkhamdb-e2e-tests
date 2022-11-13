@@ -23,11 +23,11 @@ describe("arkhamdb smoke tests", () => {
     cy.get("nav .navbar-form input").should("have.value", "hehe");
   });
 
-  // it("should API work correctly", () => {
-  //   cy.request("/").debug();
-  //   cy.request("/").then((resp) => {
-  //     expect(resp.status).to.eq(200);
-  //     console.log(resp);
-  //   });
-  // });
+  it("should API work correctly", () => {
+    cy.request("/").debug();
+    cy.request("/").then((resp) => {
+      expect(resp.status).to.eq(200);
+      console.log(resp);
+    });
+  });
 });
